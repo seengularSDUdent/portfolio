@@ -24,6 +24,66 @@
 
 .featured__description {
     max-width: 60ch;
+    color: var(--clr-slate600);
+    font-size: var(--size-sm);
+    margin: 1rem 0;
+}
+
+.featured__label {
+    font-size: var(--size-base);
+    text-transform: capitalize;
+    margin-bottom: 0.25em;
+}
+
+.featured__tech-stack {
+    padding: 0;
+    list-style: none;
+}
+
+.featured__info {
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+    text-transform: capitalize;
+}
+
+.featured__info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.featured__info-container div {
+    border: 1px solid red;
+    flex: 1;
+    min-width: 250px;
+}
+
+.featured__image-container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+.featured__image-wrapper {
+    position: relative;
+    margin: auto;
+}
+
+.featured__image-wrapper::after {
+    content: '';
+    background-color: rgb(79, 70, 229, 0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+.featured__image-wrapper:hover::after {
+    background-color: rgb(79, 70, 229, 0.1);
 }
 
 @media (min-width: 475px) {
@@ -40,11 +100,31 @@
         width: var(--size-3xl);
         height: var(--size-3xl);
     }
+
+    .featured__description {
+        font-size: var(--size-base);
+        margin: 1.5rem 0;
+    }
+
+    .featured__label {
+        font-size: var(--size-lg);
+    }
+
+    .featured__info {
+        font-size: var(--size-base);
+    }
+
+    .featured__image-container {
+        margin-top: 1.5rem;
+        grid-gap: 1.5rem;
+    }
 }
 
-/* @media (min-width: 640px) {
-
-} */
+@media (min-width: 640px) {
+    .featured__image-container {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+}
 
 /* @media (min-width: 768px) {
 
@@ -64,6 +144,18 @@
         width: var(--size-4xl);
         height: var(--size-4xl);
     }
+
+    .featured__description {
+        font-size: var(--size-lg);
+    }
+
+    .featured__label {
+        font-size: var(--size-xl);
+    }
+
+    .featured__info {
+        font-size: var(--size-lg);
+    }
 }
 
 @media (min-width: 1280px) {
@@ -79,6 +171,24 @@
     .featured__link {
         width: var(--size-5xl);
         height: var(--size-5xl);
+    }
+
+    .featured__description {
+        font-size: var(--size-xl);
+        margin: 2rem 0;
+    }
+
+    .featured__label {
+        font-size: var(--size-2xl);
+    }
+
+    .featured__info {
+        font-size: var(--size-xl);
+    }
+
+    .featured__image-container {
+        margin-top: 2rem;
+        grid-gap: 2rem;
     }
 }
 
