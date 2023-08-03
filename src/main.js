@@ -11,5 +11,7 @@ import '../styles/components/mobile-nav.css';
 import '../styles/utils.css';
 
 import mobileNav from './utils/nav-mobile';
+import themeSwithcher from './utils/theme-switcher';
 
 mobileNav();
+themeSwithcher();
