@@ -42,6 +42,24 @@
         </button>
       </nav>
     </header>
+    <!-- Mobile Nav Start -->
+    <div class="mobile-nav">
+      <ul class="mobile-nav__menu">
+        <li><a class="mobile-nav__link" href="#about">About</a></li>
+        <li><a class="mobile-nav__link" href="#featured">Work</a></li>
+        <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+          </svg>
+          </button>
+        </li>
+        <li><a href="#" class="mobile-nav__btn btn">Resume</a></li>
+      </ul>
+    </div>
+    <!-- Mobile Nav End -->
     <main>
       <section class="hero container">
         <img src="avatar.png" class="hero__img" alt="">
@@ -50,7 +68,7 @@
         <p class="hero__description">Lorem ipsum dolor sit, amet consectetur <strong>adipisicing elit</strong>. Debitis iure dolorem velit, at veritatis <strong>animi quas</strong>! Repudiandae accusamus ratione quo odio expedita sed quis labore!</p>
         <a class="hero__btn btn" href="#">Reach Out</a>
       </section>
-      <section class="about container section">
+      <section id="about" class="about container section">
         <div class="about__content">
           <h2 class="about__title">About</h2>
           <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong>Consectetur atque</strong>  at, rem fugit consequatur ratione eaque autem quod incidunt cum necessitatibus blanditiis voluptatum quo rerum, tempore non. Dolor, eius expedita.</p>
@@ -137,19 +155,95 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="work container section">
-          <h2 class="work__title">
-            Projects
-          </h2>
-          <p class="work__description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem minus dignissimos quos iusto doloremque, autem quaerat quasi. Voluptatem expedita iure corporis incidunt. Quasi voluptate earum repellendus unde rem perspiciatis maiores.
-          </p>
+      <section id="featured" class="work container section">
+        <h2 class="work__title">
+          Projects
+        </h2>
+        <p class="work__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem minus dignissimos quos iusto doloremque, autem quaerat quasi. Voluptatem expedita iure corporis incidunt. Quasi voluptate earum repellendus unde rem perspiciatis maiores.
+        </p>
+        <div class="work__container">
+          <!-- Project 1 -->
+          <h3 class="work__project-title">Project 1</h3>
+          <div class="work__image-wrapper work__image1">
+            <img src="/public/square_screenshots/stable-diffusion-xl (6).jpeg" alt="Project-1 Website">
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">Project 1</h3>
+            <p class="work__project-description1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut laboriosam facere.</p>
+            <p class="work__project-description2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatum architecto! Rerum exercitationem id corporis doloremque quae voluptas. Id magnam iure optio maiores tempore architecto labore rem laboriosam, molestiae aliquid!</p>
+            <a href="#" class="btn work__project-btn">Website</a>
+          </div>
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Project 2</h3>
+          <div class="work__image-wrapper work__image2">
+            <img src="/public/square_screenshots/stable-diffusion-xl (7).jpeg" alt="Project-1 Website">
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Project 2</h3>
+            <p class="work__project-description1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut laboriosam facere.</p>
+            <p class="work__project-description2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatum architecto! Rerum exercitationem id corporis doloremque quae voluptas. Id magnam iure optio maiores tempore architecto labore rem laboriosam, molestiae aliquid!</p>
+            <a href="#" class="btn work__project-btn">Website</a>
+          </div>
+          <!-- Project 3 -->
+          <h3 class="work__project-title">Project 3</h3>
+          <div class="work__image-wrapper work__image3">
+            <img src="/public/square_screenshots/stable-diffusion-xl (9).jpeg" alt="Project-1 Website">
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">Project 3</h3>
+            <p class="work__project-description1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut laboriosam facere.</p>
+            <p class="work__project-description2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatum architecto! Rerum exercitationem id corporis doloremque quae voluptas. Id magnam iure optio maiores tempore architecto labore rem laboriosam, molestiae aliquid!</p>
+            <a href="#" class="btn work__project-btn">Website</a>
+          </div>
+          <!-- Project 4 -->
+          <h3 class="work__project-title">Project 4</h3>
+          <div class="work__image-wrapper work__image4">
+            <img src="/public/square_screenshots/stable-diffusion-xl (10).jpeg" alt="Project-1 Website">
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">Project 4</h3>
+            <p class="work__project-description1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut laboriosam facere.</p>
+            <p class="work__project-description2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatum architecto! Rerum exercitationem id corporis doloremque quae voluptas. Id magnam iure optio maiores tempore architecto labore rem laboriosam, molestiae aliquid!</p>
+            <a href="#" class="btn work__project-btn">Website</a>
+          </div>
+          <!-- Project 5 -->
+          <h3 class="work__project-title">Project 5</h3>
+          <div class="work__image-wrapper work__image5">
+            <img src="/public/square_screenshots/stable-diffusion-xl (11).jpeg" alt="Project-1 Website">
+          </div>
+          <div class="work__project work__content5">
+            <h3 class="work__project-subtitle">Project 5</h3>
+            <p class="work__project-description1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut laboriosam facere.</p>
+            <p class="work__project-description2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatum architecto! Rerum exercitationem id corporis doloremque quae voluptas. Id magnam iure optio maiores tempore architecto labore rem laboriosam, molestiae aliquid!</p>
+            <a href="#" class="btn work__project-btn">Website</a>
+          </div>
+          <!-- Project 6 -->
+          <h3 class="work__project-title">Project 6</h3>
+          <div class="work__image-wrapper work__image6">
+            <img src="/public/square_screenshots/stable-diffusion-xl (12).jpeg" alt="Project-1 Website">
+          </div>
+          <div class="work__project work__content6">
+            <h3 class="work__project-subtitle">Project 6</h3>
+            <p class="work__project-description1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut laboriosam facere.</p>
+            <p class="work__project-description2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatum architecto! Rerum exercitationem id corporis doloremque quae voluptas. Id magnam iure optio maiores tempore architecto labore rem laboriosam, molestiae aliquid!</p>
+            <a href="#" class="btn work__project-btn">Website</a>
+          </div>
         </div>
       </section>
-      <!-- <section></section> -->
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">
+          Get In Contact
+        </h2>
+        <p class="contact__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis reprehenderit esse beatae, ex explicabo ratione dolorem, nemo voluptatibus porro eos similique quo blanditiis quaerat alias distinctio in quae officiis accusamus?
+        </p>
+        <a href="https://t.me/qasqa" target="_blank" class="contact__btn btn">Reach out</a>
+      </section>
     </main>
-    <!-- <footer></footer> -->
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Nurbek Chakmak ~</h3>
+    </footer>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
